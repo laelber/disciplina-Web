@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.container-message {
+  width: 35%;
+  padding: 10px;
+  background: #0c75ff;
+}
+
+.message-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.message-group .message-text {
+  width: 80%;
+  color: #fff;
+  word-wrap: break-word;
+}
+
+.message-group .btn {
+  height: 40px;
+}
+
+.container-form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #fff;
+}
+
+.container-form form {
+  width: 50%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff;
+  border-radius: 8px;
+}
+
+.container-form form .button {
+  width: 320px;
+}
+
+.input-group input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 4px;
+  width: 300px;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #232462;
+}
+
+.container .title {
+  font-size: 26px;
+  color: #101254;
+  font-weight: bold;
+}
+
+.container-form .input-group {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 30px;
+}
+
+.container-form .input-group {
+  color: #232462;
+}
+
+.container-form .button {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 30px;
+  background: #0c75ff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 400px;
+  height: 160px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-content .title {
+  font-size: 18px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn-modal {
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 6px;
+  background: #0c75ff;
+  color: #fff;
+}
+
+.button-group {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}

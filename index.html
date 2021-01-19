@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Trabalho 1</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-message" id="containerMessage"></div>
+
+      <div class="container-form" id="containerForm">
+        <div class="button-group">
+          <button
+            type="button"
+            class="button"
+            onclick="changeBackgroundColor('f00')"
+          >
+            Red
+          </button>
+          <button
+            type="button"
+            class="button"
+            onclick="changeBackgroundColor('0f0')"
+          >
+            Green
+          </button>
+          <button
+            type="button"
+            class="button"
+            onclick="changeBackgroundColor('fff')"
+          >
+            White
+          </button>
+        </div>
+
+        <form>
+          <p class="title">Deixe seu recado</p>
+
+          <div class="input-group">
+            <label>Nome</label>
+            <input type="text" name="inputName" id="inputName" />
+          </div>
+
+          <div class="input-group">
+            <label>Mensagem</label>
+            <input type="text" name="inputMessage" id="inputMessage" />
+          </div>
+
+          <button type="button" class="button" onclick="postMessage()">
+            Enviar
+          </button>
+        </form>
+
+        <div class="footer">
+          <button class="btn-modal" onclick="showModal()">Créditos</button>
+
+          <div class="modal" id="modal">
+            <div class="modal-content">
+              <p class="title">Créditos</p>
+              <p>Disciplina</p>
+              <p>Desenvolvimento de Software para Web</p>
+              <p>Equipe</p>
+              <p>Marcos Laelber</p>
+              <button type="button" onclick="closeModal()">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
